@@ -14,4 +14,4 @@ RUN npm run build --prod
 
 # Use an Nginx image to serve the built Angular app
 FROM nginx:alpine
-COPY --from=build /app/dist/ELEARN_PFA/usr/share/nginx/html
+COPY --from=build /app/dist/E_learning_Frontend:build:production/usr/share/nginx/html
